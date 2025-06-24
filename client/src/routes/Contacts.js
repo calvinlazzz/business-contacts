@@ -2,7 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 
 export async function loader() {
-  const response = await fetch('http://localhost:3000/contacts');
+  const response = await fetch('http://localhost:3009/contacts');
   const data = await response.json();  
   return data;
 }
